@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence version="3.0" xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence
+             https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+
+    <persistence-unit name="agendamentoQuadraApiPU">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.sqlite.JDBC"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:sqlite:C:/desenvolvimento/projetos/agendamento_quadra/db/agendamento_quadra.db" />
+            <!-- property name="jakarta.persistence.jdbc.user" value="root" / -->
+            <!-- property name="jakarta.persistence.jdbc.password" value="MUNhr34" / -->
+            <property name="hibernate.dialect" value="org.hibernate.community.dialect.SQLiteDialect" />
+            <property name="hibernate.show_sql" value="true"/>
+        </properties>
+
+    </persistence-unit>
+
+</persistence>
